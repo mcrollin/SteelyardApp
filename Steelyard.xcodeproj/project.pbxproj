@@ -7,24 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		496C1A0C2AED594B00D98229 /* ApplicationArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 496C1A0B2AED594B00D98229 /* ApplicationArchive */; };
-		496C1A0E2AED594B00D98229 /* Platform in Frameworks */ = {isa = PBXBuildFile; productRef = 496C1A0D2AED594B00D98229 /* Platform */; };
-		496C1A102AED594B00D98229 /* TreeMap in Frameworks */ = {isa = PBXBuildFile; productRef = 496C1A0F2AED594B00D98229 /* TreeMap */; };
+		4916AD642AEEBF8700E90247 /* RecentArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916AD632AEEBF8700E90247 /* RecentArchive.swift */; };
+		4916AD662AEEEFF800E90247 /* Unarchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916AD652AEEEFF800E90247 /* Unarchiver.swift */; };
+		4916AD682AEEFC6500E90247 /* RecentlyOpenedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916AD672AEEFC6500E90247 /* RecentlyOpenedView.swift */; };
+		4917FFA72AFF6B8800ED45F6 /* DesignComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 4917FFA62AFF6B8800ED45F6 /* DesignComponents */; };
+		491CC66E2AED78A500F8F422 /* Explorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491CC66C2AED78A500F8F422 /* Explorer.swift */; };
+		492C6D7C2AF9925500B9BB82 /* ExplorerSidebarTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C6D7B2AF9925500B9BB82 /* ExplorerSidebarTreeView.swift */; };
+		494188C52AFA401F00FF8D6D /* ExplorerSidebarTreeBranchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494188C42AFA401F00FF8D6D /* ExplorerSidebarTreeBranchView.swift */; };
+		494188C72AFA40B700FF8D6D /* ExplorerSidebarApplicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494188C62AFA40B700FF8D6D /* ExplorerSidebarApplicationsView.swift */; };
+		498749F22AF0F956000705DA /* ExplorerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498749F12AF0F956000705DA /* ExplorerContent.swift */; };
+		498749F42AF0F98D000705DA /* ExplorerSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498749F32AF0F98D000705DA /* ExplorerSidebar.swift */; };
 		49B582392AED57190082B4C2 /* SteelyardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B582382AED57190082B4C2 /* SteelyardApp.swift */; };
-		49B5823B2AED57190082B4C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5823A2AED57190082B4C2 /* ContentView.swift */; };
-		49B5823D2AED57190082B4C2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5823C2AED57190082B4C2 /* Item.swift */; };
 		49B5823F2AED571A0082B4C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B5823E2AED571A0082B4C2 /* Assets.xcassets */; };
 		49B582422AED571A0082B4C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B582412AED571A0082B4C2 /* Preview Assets.xcassets */; };
+		49B7BD972AED97320069DBCD /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B7BD962AED97320069DBCD /* LauncherView.swift */; };
+		49B834672AF3820900B31D61 /* ApplicationArchive in Frameworks */ = {isa = PBXBuildFile; productRef = 49B834662AF3820900B31D61 /* ApplicationArchive */; };
+		49B834692AF3820900B31D61 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 49B834682AF3820900B31D61 /* DesignSystem */; };
+		49B8346B2AF3820900B31D61 /* Platform in Frameworks */ = {isa = PBXBuildFile; productRef = 49B8346A2AF3820900B31D61 /* Platform */; };
+		49B834742AF388D900B31D61 /* UnarchiverEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B834732AF388D900B31D61 /* UnarchiverEnvironment.swift */; };
+		49B8349C2AF51E3500B31D61 /* Finder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8349B2AF51E3500B31D61 /* Finder.swift */; };
+		49B835012AF7EF4700B31D61 /* ExplorerSidebarTreeLeafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B835002AF7EF4700B31D61 /* ExplorerSidebarTreeLeafView.swift */; };
+		49B8350B2AF8307100B31D61 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8350A2AF8307100B31D61 /* LoadingView.swift */; };
+		49F71BA22AEE3CBD0080157F /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F71BA12AEE3CBD0080157F /* ArchiveView.swift */; };
+		49F71BA42AEE3D1E0080157F /* ExplorerNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F71BA32AEE3D1E0080157F /* ExplorerNavigation.swift */; };
+		49F71BA62AEE3D4A0080157F /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F71BA52AEE3D4A0080157F /* PathView.swift */; };
+		49F71BA82AEE3DAE0080157F /* PathItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F71BA72AEE3DAE0080157F /* PathItemView.swift */; };
+		49F71BAA2AEE3DE00080157F /* ExplorerInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F71BA92AEE3DE00080157F /* ExplorerInspector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4916AD632AEEBF8700E90247 /* RecentArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentArchive.swift; sourceTree = "<group>"; };
+		4916AD652AEEEFF800E90247 /* Unarchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unarchiver.swift; sourceTree = "<group>"; };
+		4916AD672AEEFC6500E90247 /* RecentlyOpenedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyOpenedView.swift; sourceTree = "<group>"; };
+		491CC66C2AED78A500F8F422 /* Explorer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explorer.swift; sourceTree = "<group>"; };
+		492C6D7B2AF9925500B9BB82 /* ExplorerSidebarTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerSidebarTreeView.swift; sourceTree = "<group>"; };
+		494188C42AFA401F00FF8D6D /* ExplorerSidebarTreeBranchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerSidebarTreeBranchView.swift; sourceTree = "<group>"; };
+		494188C62AFA40B700FF8D6D /* ExplorerSidebarApplicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerSidebarApplicationsView.swift; sourceTree = "<group>"; };
+		498749F12AF0F956000705DA /* ExplorerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerContent.swift; sourceTree = "<group>"; };
+		498749F32AF0F98D000705DA /* ExplorerSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerSidebar.swift; sourceTree = "<group>"; };
 		49B582352AED57190082B4C2 /* Steelyard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steelyard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B582382AED57190082B4C2 /* SteelyardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteelyardApp.swift; sourceTree = "<group>"; };
-		49B5823A2AED57190082B4C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		49B5823C2AED57190082B4C2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		49B5823E2AED571A0082B4C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B582412AED571A0082B4C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49B582432AED571A0082B4C2 /* Steelyard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steelyard.entitlements; sourceTree = "<group>"; };
+		49B7BD962AED97320069DBCD /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
+		49B834732AF388D900B31D61 /* UnarchiverEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnarchiverEnvironment.swift; sourceTree = "<group>"; };
+		49B8349B2AF51E3500B31D61 /* Finder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
+		49B835002AF7EF4700B31D61 /* ExplorerSidebarTreeLeafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerSidebarTreeLeafView.swift; sourceTree = "<group>"; };
+		49B8350A2AF8307100B31D61 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		49F71B7C2AEDA6740080157F /* Steelyard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Steelyard-Info.plist"; sourceTree = "<group>"; };
+		49F71BA12AEE3CBD0080157F /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		49F71BA32AEE3D1E0080157F /* ExplorerNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerNavigation.swift; sourceTree = "<group>"; };
+		49F71BA52AEE3D4A0080157F /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+		49F71BA72AEE3DAE0080157F /* PathItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathItemView.swift; sourceTree = "<group>"; };
+		49F71BA92AEE3DE00080157F /* ExplorerInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerInspector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,21 +68,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496C1A102AED594B00D98229 /* TreeMap in Frameworks */,
-				496C1A0C2AED594B00D98229 /* ApplicationArchive in Frameworks */,
-				496C1A0E2AED594B00D98229 /* Platform in Frameworks */,
+				4917FFA72AFF6B8800ED45F6 /* DesignComponents in Frameworks */,
+				49B834672AF3820900B31D61 /* ApplicationArchive in Frameworks */,
+				49B8346B2AF3820900B31D61 /* Platform in Frameworks */,
+				49B834692AF3820900B31D61 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4916AD692AEEFCD800E90247 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				491CC66C2AED78A500F8F422 /* Explorer.swift */,
+				4916AD652AEEEFF800E90247 /* Unarchiver.swift */,
+				49B8349B2AF51E3500B31D61 /* Finder.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		4916AD6A2AEEFCE000E90247 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49F71BA12AEE3CBD0080157F /* ArchiveView.swift */,
+				49B8350A2AF8307100B31D61 /* LoadingView.swift */,
+				49B835082AF8302400B31D61 /* Explorer */,
+				49B835092AF8305700B31D61 /* Launcher */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		494188C32AFA3F7400FF8D6D /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				494188C42AFA401F00FF8D6D /* ExplorerSidebarTreeBranchView.swift */,
+				49B835002AF7EF4700B31D61 /* ExplorerSidebarTreeLeafView.swift */,
+				492C6D7B2AF9925500B9BB82 /* ExplorerSidebarTreeView.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		49B5822C2AED57190082B4C2 = {
 			isa = PBXGroup;
 			children = (
+				49F71B7C2AEDA6740080157F /* Steelyard-Info.plist */,
 				49B582432AED571A0082B4C2 /* Steelyard.entitlements */,
+				49B5823E2AED571A0082B4C2 /* Assets.xcassets */,
+				49B582402AED571A0082B4C2 /* Preview Content */,
 				49B582372AED57190082B4C2 /* Sources */,
 				49B582362AED57190082B4C2 /* Products */,
+				49B8350C2AF8F60600B31D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				49B582382AED57190082B4C2 /* SteelyardApp.swift */,
-				49B5823A2AED57190082B4C2 /* ContentView.swift */,
-				49B5823C2AED57190082B4C2 /* Item.swift */,
-				49B5823E2AED571A0082B4C2 /* Assets.xcassets */,
-				49B582402AED571A0082B4C2 /* Preview Content */,
+				49F71B9F2AEE3C420080157F /* Archive */,
+				49B8346E2AF3884600B31D61 /* Environment */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -76,6 +146,71 @@
 				49B582412AED571A0082B4C2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49B8346E2AF3884600B31D61 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				49B834732AF388D900B31D61 /* UnarchiverEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		49B835062AF82FDF00B31D61 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				494188C62AFA40B700FF8D6D /* ExplorerSidebarApplicationsView.swift */,
+				498749F32AF0F98D000705DA /* ExplorerSidebar.swift */,
+				494188C32AFA3F7400FF8D6D /* Tree */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		49B835072AF8300700B31D61 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				498749F12AF0F956000705DA /* ExplorerContent.swift */,
+				49F71BA72AEE3DAE0080157F /* PathItemView.swift */,
+				49F71BA52AEE3D4A0080157F /* PathView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		49B835082AF8302400B31D61 /* Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				49F71BA92AEE3DE00080157F /* ExplorerInspector.swift */,
+				49F71BA32AEE3D1E0080157F /* ExplorerNavigation.swift */,
+				49B835072AF8300700B31D61 /* Content */,
+				49B835062AF82FDF00B31D61 /* Sidebar */,
+			);
+			path = Explorer;
+			sourceTree = "<group>";
+		};
+		49B835092AF8305700B31D61 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				4916AD632AEEBF8700E90247 /* RecentArchive.swift */,
+				4916AD672AEEFC6500E90247 /* RecentlyOpenedView.swift */,
+				49B7BD962AED97320069DBCD /* LauncherView.swift */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		49B8350C2AF8F60600B31D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49F71B9F2AEE3C420080157F /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				4916AD6A2AEEFCE000E90247 /* Views */,
+				4916AD692AEEFCD800E90247 /* State */,
+			);
+			path = Archive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +230,10 @@
 			);
 			name = Steelyard;
 			packageProductDependencies = (
-				496C1A0B2AED594B00D98229 /* ApplicationArchive */,
-				496C1A0D2AED594B00D98229 /* Platform */,
-				496C1A0F2AED594B00D98229 /* TreeMap */,
+				49B834662AF3820900B31D61 /* ApplicationArchive */,
+				49B834682AF3820900B31D61 /* DesignSystem */,
+				49B8346A2AF3820900B31D61 /* Platform */,
+				4917FFA62AFF6B8800ED45F6 /* DesignComponents */,
 			);
 			productName = SteelyardApp;
 			productReference = 49B582352AED57190082B4C2 /* Steelyard.app */;
@@ -128,7 +264,7 @@
 			);
 			mainGroup = 49B5822C2AED57190082B4C2;
 			packageReferences = (
-				496C1A0A2AED594B00D98229 /* XCRemoteSwiftPackageReference "SteelyardCore" */,
+				49B834652AF3820900B31D61 /* XCRemoteSwiftPackageReference "SteelyardCore" */,
 			);
 			productRefGroup = 49B582362AED57190082B4C2 /* Products */;
 			projectDirPath = "";
@@ -156,8 +292,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49B5823B2AED57190082B4C2 /* ContentView.swift in Sources */,
-				49B5823D2AED57190082B4C2 /* Item.swift in Sources */,
+				49B835012AF7EF4700B31D61 /* ExplorerSidebarTreeLeafView.swift in Sources */,
+				4916AD682AEEFC6500E90247 /* RecentlyOpenedView.swift in Sources */,
+				492C6D7C2AF9925500B9BB82 /* ExplorerSidebarTreeView.swift in Sources */,
+				49F71BA62AEE3D4A0080157F /* PathView.swift in Sources */,
+				49B8349C2AF51E3500B31D61 /* Finder.swift in Sources */,
+				494188C52AFA401F00FF8D6D /* ExplorerSidebarTreeBranchView.swift in Sources */,
+				49B834742AF388D900B31D61 /* UnarchiverEnvironment.swift in Sources */,
+				498749F42AF0F98D000705DA /* ExplorerSidebar.swift in Sources */,
+				49F71BA22AEE3CBD0080157F /* ArchiveView.swift in Sources */,
+				491CC66E2AED78A500F8F422 /* Explorer.swift in Sources */,
+				49B8350B2AF8307100B31D61 /* LoadingView.swift in Sources */,
+				49B7BD972AED97320069DBCD /* LauncherView.swift in Sources */,
+				494188C72AFA40B700FF8D6D /* ExplorerSidebarApplicationsView.swift in Sources */,
+				4916AD642AEEBF8700E90247 /* RecentArchive.swift in Sources */,
+				49F71BAA2AEE3DE00080157F /* ExplorerInspector.swift in Sources */,
+				498749F22AF0F956000705DA /* ExplorerContent.swift in Sources */,
+				4916AD662AEEEFF800E90247 /* Unarchiver.swift in Sources */,
+				49F71BA82AEE3DAE0080157F /* PathItemView.swift in Sources */,
+				49F71BA42AEE3D1E0080157F /* ExplorerNavigation.swift in Sources */,
 				49B582392AED57190082B4C2 /* SteelyardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,11 +445,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
-				DEVELOPMENT_TEAM = 5ZANXJRW9Q;
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
+				DEVELOPMENT_TEAM = FKKWUHNWNH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Steelyard-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcrollin.SteelyardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -320,11 +475,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
-				DEVELOPMENT_TEAM = 5ZANXJRW9Q;
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
+				DEVELOPMENT_TEAM = FKKWUHNWNH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Steelyard-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcrollin.SteelyardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -363,31 +520,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		496C1A0A2AED594B00D98229 /* XCRemoteSwiftPackageReference "SteelyardCore" */ = {
+		49B834652AF3820900B31D61 /* XCRemoteSwiftPackageReference "SteelyardCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:mcrollin/SteelyardCore.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = revision;
+				revision = c9c53b47d776479e04680912f06822d018cd201c;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		496C1A0B2AED594B00D98229 /* ApplicationArchive */ = {
+		4917FFA62AFF6B8800ED45F6 /* DesignComponents */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 496C1A0A2AED594B00D98229 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
+			package = 49B834652AF3820900B31D61 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
+			productName = DesignComponents;
+		};
+		49B834662AF3820900B31D61 /* ApplicationArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49B834652AF3820900B31D61 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
 			productName = ApplicationArchive;
 		};
-		496C1A0D2AED594B00D98229 /* Platform */ = {
+		49B834682AF3820900B31D61 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 496C1A0A2AED594B00D98229 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
-			productName = Platform;
+			package = 49B834652AF3820900B31D61 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
+			productName = DesignSystem;
 		};
-		496C1A0F2AED594B00D98229 /* TreeMap */ = {
+		49B8346A2AF3820900B31D61 /* Platform */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 496C1A0A2AED594B00D98229 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
-			productName = TreeMap;
+			package = 49B834652AF3820900B31D61 /* XCRemoteSwiftPackageReference "SteelyardCore" */;
+			productName = Platform;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

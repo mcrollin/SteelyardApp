@@ -2,28 +2,50 @@
 //  Copyright © Marc Rollin.
 //
 
-import SwiftData
+import DesignComponents
 import SwiftUI
+
+// MARK: - SteelyardApp
 
 @main
 struct SteelyardApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    // MARK: Internal
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArchiveView()
+                .withUnarchiver()
+                .withToaster()
+                .withDesignSystem()
         }
-        .modelContainer(sharedModelContainer)
+        .commands {
+            appMenu
+        }
+    }
+
+    // MARK: Private
+
+    private var appMenu: some Commands {
+        CommandGroup(replacing: .newItem) {
+            Button("menu.new-window") {
+//                openWindow(id: "main")
+            }
+            .keyboardShortcut("n", modifiers: .shift)
+        }
+//        CommandGroup(replacing: .textFormatting) {
+//            Menu("menu.font") {
+//                Button("menu.font.bigger") {
+//                    if theme.fontSizeScale < 1.5 {
+//                        theme.fontSizeScale += 0.1
+//                    }
+//                }
+//                Button("menu.font.smaller") {
+//                    if theme.fontSizeScale > 0.5 {
+//                        theme.fontSizeScale -= 0.1
+//                    }
+//                }
+//            }
+//        }
     }
 }
